@@ -142,9 +142,9 @@ export default {
 
 <style scoped>
 .score-page {
-  --score-accent: #9eb95a;
-  --score-accent-soft: rgba(158, 185, 90, 0.18);
-  --score-accent-faint: rgba(158, 185, 90, 0.1);
+  --score-accent: #4f8cff;
+  --score-accent-soft: rgba(79, 140, 255, 0.18);
+  --score-accent-faint: rgba(79, 140, 255, 0.1);
   --score-glass: rgba(255, 255, 255, 0.04);
   --score-glass-strong: rgba(255, 255, 255, 0.06);
   --score-border: rgba(255, 255, 255, 0.1);
@@ -158,7 +158,7 @@ export default {
   inset: 0 0 auto;
   height: 280px;
   background:
-    radial-gradient(62% 42% at 84% 4%, rgba(158, 185, 90, 0.13) 0%, rgba(158, 185, 90, 0) 74%),
+    radial-gradient(62% 42% at 84% 4%, rgba(79, 140, 255, 0.13) 0%, rgba(79, 140, 255, 0) 74%),
     radial-gradient(44% 26% at 14% 14%, rgba(105, 200, 155, 0.08) 0%, rgba(105, 200, 155, 0) 76%);
   pointer-events: none;
   z-index: 0;
@@ -196,14 +196,14 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(158, 185, 90, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
 }
 
 .n-watermark-soft::after {
-  color: rgba(158, 185, 90, 0.06);
+  color: rgba(79, 140, 255, 0.06);
 }
 
 .score-cards {
@@ -264,8 +264,8 @@ export default {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: rgba(158, 185, 90, 0.95);
-  box-shadow: 0 0 8px rgba(158, 185, 90, 0.42);
+  background: rgba(79, 140, 255, 0.95);
+  box-shadow: 0 0 8px rgba(79, 140, 255, 0.42);
   flex-shrink: 0;
 }
 

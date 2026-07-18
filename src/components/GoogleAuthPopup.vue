@@ -203,9 +203,9 @@ export default {
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.01em;
-  background: linear-gradient(135deg, #a5be5c 0%, #8ca64a 100%);
-  color: #12170a;
-  box-shadow: 0 10px 22px rgba(140, 166, 74, 0.24);
+  background: linear-gradient(135deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
+  box-shadow: 0 10px 22px rgba(79, 140, 255, 0.24);
 }
 
 .gauth-btn-continue:disabled {
@@ -241,7 +241,7 @@ export default {
   width: 18px;
   height: 18px;
   border: 2px solid rgba(18, 23, 10, 0.3);
-  border-top-color: #12170a;
+  border-top-color: #d0e4ff;
   border-radius: 50%;
   animation: gauthSpin 0.6s linear infinite;
 }

@@ -103,8 +103,8 @@
         <svg class="perf-svg" viewBox="0 0 320 170" preserveAspectRatio="none">
           <defs>
             <linearGradient id="teamAreaA" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="rgba(158, 185, 90, 0.45)" />
-              <stop offset="100%" stop-color="rgba(158, 185, 90, 0.02)" />
+              <stop offset="0%" stop-color="rgba(79, 140, 255, 0.45)" />
+              <stop offset="100%" stop-color="rgba(79, 140, 255, 0.02)" />
             </linearGradient>
             <linearGradient id="teamAreaB" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stop-color="rgba(108, 194, 223, 0.36)" />

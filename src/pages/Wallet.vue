@@ -202,9 +202,9 @@ export default {
 
 <style scoped>
 .wallet-page {
-  --wallet-accent: #9eb95a;
-  --wallet-accent-soft: rgba(158, 185, 90, 0.17);
-  --wallet-accent-faint: rgba(158, 185, 90, 0.1);
+  --wallet-accent: #4f8cff;
+  --wallet-accent-soft: rgba(79, 140, 255, 0.17);
+  --wallet-accent-faint: rgba(79, 140, 255, 0.1);
   --wallet-glass: rgba(255, 255, 255, 0.04);
   --wallet-glass-strong: rgba(255, 255, 255, 0.06);
   --wallet-border: rgba(255, 255, 255, 0.1);
@@ -219,7 +219,7 @@ export default {
   inset: 0 0 auto;
   height: 280px;
   background:
-    radial-gradient(62% 42% at 84% 6%, rgba(158, 185, 90, 0.14) 0%, rgba(158, 185, 90, 0) 72%),
+    radial-gradient(62% 42% at 84% 6%, rgba(79, 140, 255, 0.14) 0%, rgba(79, 140, 255, 0) 72%),
     radial-gradient(42% 26% at 12% 16%, rgba(105, 200, 155, 0.08) 0%, rgba(105, 200, 155, 0) 78%);
   pointer-events: none;
   z-index: 0;
@@ -257,14 +257,14 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(158, 185, 90, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
 }
 
 .n-watermark-soft::after {
-  color: rgba(158, 185, 90, 0.06);
+  color: rgba(79, 140, 255, 0.06);
 }
 
 .wallet-head {
@@ -294,12 +294,12 @@ export default {
   width: 38px;
   height: 38px;
   border-radius: 12px;
-  border: 1px solid rgba(158, 185, 90, 0.32);
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
+  border: 1px solid rgba(79, 140, 255, 0.32);
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
   font-size: 23px;
   line-height: 1;
-  box-shadow: 0 10px 18px rgba(158, 185, 90, 0.2);
+  box-shadow: 0 10px 18px rgba(79, 140, 255, 0.2);
 }
 
 .wallet-add-btn:active {
@@ -329,9 +329,9 @@ export default {
 }
 
 .wallet-mode-tab.active {
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
-  box-shadow: 0 8px 16px rgba(158, 185, 90, 0.2);
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
+  box-shadow: 0 8px 16px rgba(79, 140, 255, 0.2);
 }
 
 .payout-config-card {
@@ -387,7 +387,7 @@ export default {
 }
 
 .wallet-add-card {
-  border: 1px dashed rgba(158, 185, 90, 0.34);
+  border: 1px dashed rgba(79, 140, 255, 0.34);
   border-radius: 20px;
   padding: 16px;
   display: flex;
@@ -423,8 +423,8 @@ export default {
 }
 
 .wallet-card.selected {
-  border-color: rgba(158, 185, 90, 0.56);
-  box-shadow: 0 0 0 1px rgba(158, 185, 90, 0.16) inset;
+  border-color: rgba(79, 140, 255, 0.56);
+  box-shadow: 0 0 0 1px rgba(79, 140, 255, 0.16) inset;
 }
 
 .wallet-top {
@@ -498,7 +498,7 @@ export default {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.2),
     inset 0 0 0 1px rgba(196, 214, 126, 0.1),
-    0 4px 10px rgba(158, 185, 90, 0.18);
+    0 4px 10px rgba(79, 140, 255, 0.18);
 }
 
 .wallet-meta-row {
@@ -556,10 +556,10 @@ export default {
 }
 
 .btn-inline.primary {
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
   border-color: transparent;
-  box-shadow: 0 8px 16px rgba(158, 185, 90, 0.2);
+  box-shadow: 0 8px 16px rgba(79, 140, 255, 0.2);
 }
 
 .btn-inline.danger {

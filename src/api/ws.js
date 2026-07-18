@@ -51,7 +51,10 @@ function resolveSocketBaseUrl() {
   const explicit = normalizeWsBaseUrl(config.wsBaseURL);
   if (explicit) return explicit;
 
-  // Prevent accidental connection attempts to Vite HMR socket in local dev.
+  if (config.baseURL) {
+    return normalizeWsBaseUrl(config.baseURL);
+  }
+
   if (looksLikeLocalViteHost()) return '';
 
   if (typeof window === 'undefined') return '';

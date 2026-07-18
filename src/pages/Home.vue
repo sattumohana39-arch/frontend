@@ -424,7 +424,7 @@ export default {
 
 <style scoped>
 .home-page {
-  --home-accent: #a3bf51;
+  --home-accent: #4f8cff;
   --home-accent-soft: rgba(163, 191, 81, 0.18);
   --home-accent-faint: rgba(163, 191, 81, 0.1);
   --glass-bg: rgba(255, 255, 255, 0.035);
@@ -856,8 +856,8 @@ export default {
   padding: 8px 0;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(145deg, #a8c452, #8fae44);
-  color: #1a1f14;
+  background: linear-gradient(145deg, #4f8cff, #8fae44);
+  color: #d0e4ff;
   font-size: 12px;
   font-weight: 800;
   font-family: var(--font-label);
@@ -1383,7 +1383,7 @@ export default {
 .hero-dot.active {
   width: 22px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #a8c452, #c9e278);
+  background: linear-gradient(90deg, #4f8cff, #c9e278);
   border-color: rgba(163, 191, 81, 0.5);
   box-shadow: 0 0 10px rgba(163, 191, 81, 0.5);
 }

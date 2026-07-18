@@ -169,7 +169,7 @@ export default {
 
 <style scoped>
 .usdt-order-page {
-  --order-accent: #a3bf51;
+  --order-accent: #4f8cff;
   --glass-bg: rgba(255, 255, 255, 0.035);
   --glass-bg-strong: rgba(255, 255, 255, 0.052);
   --glass-border: rgba(255, 255, 255, 0.11);

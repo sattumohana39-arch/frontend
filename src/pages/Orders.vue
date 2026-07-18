@@ -167,7 +167,7 @@ export default {
 
 <style scoped>
 .orders-page {
-  --or-accent: #9eb95a;
+  --or-accent: #4f8cff;
   --or-glass: rgba(255, 255, 255, 0.04);
   --or-glass-strong: rgba(255, 255, 255, 0.06);
   --or-border: rgba(255, 255, 255, 0.1);
@@ -181,7 +181,7 @@ export default {
   inset: 0 0 auto;
   height: 280px;
   background:
-    radial-gradient(62% 42% at 84% 4%, rgba(158, 185, 90, 0.13) 0%, rgba(158, 185, 90, 0) 74%),
+    radial-gradient(62% 42% at 84% 4%, rgba(79, 140, 255, 0.13) 0%, rgba(79, 140, 255, 0) 74%),
     radial-gradient(44% 26% at 14% 14%, rgba(105, 200, 155, 0.08) 0%, rgba(105, 200, 155, 0) 76%);
   pointer-events: none;
   z-index: 0;
@@ -219,14 +219,14 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(158, 185, 90, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
 }
 
 .n-watermark-soft::after {
-  color: rgba(158, 185, 90, 0.06);
+  color: rgba(79, 140, 255, 0.06);
 }
 
 .orders-tabs {
@@ -241,8 +241,8 @@ export default {
 }
 
 .orders-tabs .filter-tab.active {
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
 }
 
 .order-list {

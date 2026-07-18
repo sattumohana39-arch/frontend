@@ -125,7 +125,7 @@ export default {
 }
 .confirm-btn-confirm {
   color: rgba(203, 219, 158, 0.96);
-  background: rgba(158, 185, 90, 0.14);
+  background: rgba(79, 140, 255, 0.14);
 }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes scaleIn { to { transform: scale(1); } }

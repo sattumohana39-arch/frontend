@@ -124,9 +124,9 @@ export default {
 
 <style scoped>
 .my-page {
-  --my-accent: #9eb95a;
-  --my-accent-soft: rgba(158, 185, 90, 0.18);
-  --my-accent-faint: rgba(158, 185, 90, 0.1);
+  --my-accent: #4f8cff;
+  --my-accent-soft: rgba(79, 140, 255, 0.18);
+  --my-accent-faint: rgba(79, 140, 255, 0.1);
   --my-glass: rgba(255, 255, 255, 0.04);
   --my-glass-strong: rgba(255, 255, 255, 0.06);
   --my-border: rgba(255, 255, 255, 0.1);
@@ -141,7 +141,7 @@ export default {
   inset: 0 0 auto;
   height: 290px;
   background:
-    radial-gradient(62% 42% at 82% 2%, rgba(158, 185, 90, 0.13) 0%, rgba(158, 185, 90, 0) 74%),
+    radial-gradient(62% 42% at 82% 2%, rgba(79, 140, 255, 0.13) 0%, rgba(79, 140, 255, 0) 74%),
     radial-gradient(44% 26% at 14% 14%, rgba(105, 200, 155, 0.08) 0%, rgba(105, 200, 155, 0) 76%);
   z-index: 0;
   pointer-events: none;
@@ -180,14 +180,14 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(158, 185, 90, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
 }
 
 .n-watermark-soft::after {
-  color: rgba(158, 185, 90, 0.06);
+  color: rgba(79, 140, 255, 0.06);
 }
 
 .profile-hero {
@@ -219,8 +219,8 @@ export default {
   gap: 7px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(158, 185, 90, 0.12);
-  border: 1px solid rgba(158, 185, 90, 0.32);
+  background: rgba(79, 140, 255, 0.12);
+  border: 1px solid rgba(79, 140, 255, 0.32);
   color: rgba(203, 219, 158, 0.95);
   font-size: 10px;
   font-weight: 700;
@@ -233,8 +233,8 @@ export default {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: rgba(158, 185, 90, 0.95);
-  box-shadow: 0 0 8px rgba(158, 185, 90, 0.4);
+  background: rgba(79, 140, 255, 0.95);
+  box-shadow: 0 0 8px rgba(79, 140, 255, 0.4);
 }
 
 .quick-actions {
@@ -259,10 +259,10 @@ export default {
 }
 
 .quick-action.primary {
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
   border-color: transparent;
-  color: #1a1f14;
-  box-shadow: 0 10px 20px rgba(158, 185, 90, 0.2);
+  color: #d0e4ff;
+  box-shadow: 0 10px 20px rgba(79, 140, 255, 0.2);
 }
 
 .quick-action:active {
@@ -376,7 +376,7 @@ export default {
 }
 
 .menu-pin {
-  background: rgba(158, 185, 90, 0.16);
+  background: rgba(79, 140, 255, 0.16);
 }
 
 .menu-history {
@@ -411,13 +411,13 @@ export default {
 .logout-wrap .btn-primary {
   min-height: 44px;
   border-radius: 999px;
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 11px;
   font-family: var(--font-label);
-  box-shadow: 0 10px 20px rgba(158, 185, 90, 0.2);
+  box-shadow: 0 10px 20px rgba(79, 140, 255, 0.2);
 }
 
 @media (max-width: 380px) {

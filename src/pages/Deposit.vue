@@ -181,7 +181,7 @@ export default {
 
 <style scoped>
 .deposit-page {
-  --dep-accent: #a3bf51;
+  --dep-accent: #4f8cff;
   --dep-accent-soft: rgba(163, 191, 81, 0.18);
   --dep-accent-faint: rgba(163, 191, 81, 0.1);
   --dep-glass: rgba(255, 255, 255, 0.035);
@@ -457,8 +457,8 @@ export default {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: linear-gradient(140deg, #a8c35c 0%, #8ea94a 100%);
-  color: #17200e;
+  background: linear-gradient(140deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
   border: 1px solid rgba(236, 246, 194, 0.34);
   box-shadow:
     0 12px 24px rgba(133, 160, 62, 0.24),

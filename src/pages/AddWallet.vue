@@ -142,9 +142,9 @@ export default {
 
 <style scoped>
 .add-wallet-page {
-  --add-accent: #9eb95a;
-  --add-accent-soft: rgba(158, 185, 90, 0.16);
-  --add-accent-faint: rgba(158, 185, 90, 0.1);
+  --add-accent: #4f8cff;
+  --add-accent-soft: rgba(79, 140, 255, 0.16);
+  --add-accent-faint: rgba(79, 140, 255, 0.1);
   --add-glass: rgba(255, 255, 255, 0.04);
   --add-glass-strong: rgba(255, 255, 255, 0.06);
   --add-border: rgba(255, 255, 255, 0.1);
@@ -157,7 +157,7 @@ export default {
   inset: 0 0 auto;
   height: 260px;
   background:
-    radial-gradient(62% 42% at 86% 8%, rgba(158, 185, 90, 0.14) 0%, rgba(158, 185, 90, 0) 72%),
+    radial-gradient(62% 42% at 86% 8%, rgba(79, 140, 255, 0.14) 0%, rgba(79, 140, 255, 0) 72%),
     radial-gradient(40% 24% at 10% 14%, rgba(105, 200, 155, 0.08) 0%, rgba(105, 200, 155, 0) 78%);
   pointer-events: none;
   z-index: 0;
@@ -193,7 +193,7 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(158, 185, 90, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
@@ -243,8 +243,8 @@ export default {
 
 .form-select:focus,
 .form-input:focus {
-  border-color: rgba(158, 185, 90, 0.52);
-  box-shadow: 0 0 0 3px rgba(158, 185, 90, 0.14);
+  border-color: rgba(79, 140, 255, 0.52);
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.14);
 }
 
 .provider-grid {
@@ -269,9 +269,9 @@ export default {
 }
 
 .provider-item.active {
-  border-color: rgba(158, 185, 90, 0.58);
-  background: rgba(158, 185, 90, 0.14);
-  box-shadow: inset 0 0 0 1px rgba(158, 185, 90, 0.18);
+  border-color: rgba(79, 140, 255, 0.58);
+  background: rgba(79, 140, 255, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(79, 140, 255, 0.18);
 }
 
 .provider-logo {
@@ -296,14 +296,14 @@ export default {
   border: none;
   min-height: 46px;
   border-radius: 999px;
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
   font-size: 12px;
   font-family: var(--font-label);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 800;
-  box-shadow: 0 10px 20px rgba(158, 185, 90, 0.2);
+  box-shadow: 0 10px 20px rgba(79, 140, 255, 0.2);
 }
 
 .submit-btn:active {

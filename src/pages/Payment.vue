@@ -312,9 +312,9 @@ export default {
 
 <style scoped>
 .payment-page {
-  --pay-accent: #9eb95a;
-  --pay-accent-soft: rgba(158, 185, 90, 0.18);
-  --pay-accent-faint: rgba(158, 185, 90, 0.11);
+  --pay-accent: #4f8cff;
+  --pay-accent-soft: rgba(79, 140, 255, 0.18);
+  --pay-accent-faint: rgba(79, 140, 255, 0.11);
   --pay-accent-text: #c8d9a0;
   --pay-glass: rgba(255, 255, 255, 0.04);
   --pay-glass-strong: rgba(255, 255, 255, 0.06);
@@ -330,7 +330,7 @@ export default {
   inset: 0 0 auto;
   height: 300px;
   background:
-    radial-gradient(62% 42% at 82% 2%, rgba(158, 185, 90, 0.13) 0%, rgba(158, 185, 90, 0) 74%),
+    radial-gradient(62% 42% at 82% 2%, rgba(79, 140, 255, 0.13) 0%, rgba(79, 140, 255, 0) 74%),
     radial-gradient(44% 26% at 14% 14%, rgba(105, 200, 155, 0.08) 0%, rgba(105, 200, 155, 0) 76%);
   z-index: 0;
   pointer-events: none;
@@ -368,14 +368,14 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(158, 185, 90, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
 }
 
 .n-watermark-soft::after {
-  color: rgba(158, 185, 90, 0.06);
+  color: rgba(79, 140, 255, 0.06);
 }
 
 .trade-hero {
@@ -425,8 +425,8 @@ export default {
 
 .signal-bars span:nth-child(3),
 .signal-bars span:nth-child(5) {
-  background: rgba(158, 185, 90, 0.84);
-  box-shadow: 0 0 8px rgba(158, 185, 90, 0.34);
+  background: rgba(79, 140, 255, 0.84);
+  box-shadow: 0 0 8px rgba(79, 140, 255, 0.34);
 }
 
 .hero-balance-card {
@@ -460,8 +460,8 @@ export default {
 .metric-badge {
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(158, 185, 90, 0.34);
-  background: rgba(158, 185, 90, 0.12);
+  border: 1px solid rgba(79, 140, 255, 0.34);
+  background: rgba(79, 140, 255, 0.12);
   color: rgba(200, 217, 160, 0.92);
   font-size: 10px;
   text-transform: uppercase;
@@ -535,7 +535,7 @@ export default {
   margin: 0 16px 12px;
   padding: 10px 12px;
   border-radius: 14px;
-  border-color: rgba(158, 185, 90, 0.26);
+  border-color: rgba(79, 140, 255, 0.26);
   color: rgba(214, 228, 182, 0.92);
   font-size: 12px;
   font-weight: 600;
@@ -548,8 +548,8 @@ export default {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: rgba(158, 185, 90, 0.95);
-  box-shadow: 0 0 8px rgba(158, 185, 90, 0.42);
+  background: rgba(79, 140, 255, 0.95);
+  box-shadow: 0 0 8px rgba(79, 140, 255, 0.42);
   flex-shrink: 0;
 }
 
@@ -597,9 +597,9 @@ export default {
 }
 
 .range-pill.active {
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
   border-color: transparent;
-  color: #1a1f14;
+  color: #d0e4ff;
 }
 
 .order-list {
@@ -632,7 +632,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(158, 185, 90, 0.18);
+  background: rgba(79, 140, 255, 0.18);
   color: #b6d076;
   font-size: 20px;
   font-weight: 800;
@@ -661,14 +661,14 @@ export default {
   border-radius: 999px;
   padding: 9px 14px;
   min-width: 88px;
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
-  color: #1a1f14;
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
+  color: #d0e4ff;
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-family: var(--font-label);
-  box-shadow: 0 8px 16px rgba(158, 185, 90, 0.2);
+  box-shadow: 0 8px 16px rgba(79, 140, 255, 0.2);
 }
 
 .claim-btn:active {
@@ -685,7 +685,7 @@ export default {
 
 .rate-skeleton {
   border-radius: 12px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 25%, rgba(158, 185, 90, 0.16) 50%, rgba(255, 255, 255, 0.06) 75%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.06) 25%, rgba(79, 140, 255, 0.16) 50%, rgba(255, 255, 255, 0.06) 75%);
   background-size: 200% 100%;
   animation: rateShimmer 1.15s linear infinite;
 }

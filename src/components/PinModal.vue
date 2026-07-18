@@ -201,14 +201,14 @@ export default {
   height: 14px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(158, 185, 90, 0.26);
+  border: 1px solid rgba(79, 140, 255, 0.26);
   transition: all 0.2s;
 }
 .pin-dot.filled {
-  background: linear-gradient(145deg, #a8c452 0%, #98b645 100%);
+  background: linear-gradient(145deg, #4f8cff 0%, #2e6ae6 100%);
   transform: scale(1.1);
   border-color: transparent;
-  box-shadow: 0 0 10px rgba(158, 185, 90, 0.26);
+  box-shadow: 0 0 10px rgba(79, 140, 255, 0.26);
 }
 .hidden-input {
   position: absolute;
