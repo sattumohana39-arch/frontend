@@ -184,8 +184,8 @@ export default {
   inset: 0 0 auto;
   height: 300px;
   background:
-    radial-gradient(56% 42% at 84% 8%, rgba(163, 191, 81, 0.14) 0%, rgba(163, 191, 81, 0) 72%),
-    radial-gradient(46% 30% at 12% 10%, rgba(95, 202, 146, 0.06) 0%, rgba(95, 202, 146, 0) 74%);
+    radial-gradient(56% 42% at 84% 8%, rgba(79, 140, 255, 0.14) 0%, rgba(79, 140, 255, 0) 72%),
+    radial-gradient(46% 30% at 12% 10%, rgba(46, 106, 230, 0.06) 0%, rgba(46, 106, 230, 0) 74%);
   pointer-events: none;
   z-index: 0;
 }

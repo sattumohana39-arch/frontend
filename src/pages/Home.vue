@@ -425,8 +425,8 @@ export default {
 <style scoped>
 .home-page {
   --home-accent: #4f8cff;
-  --home-accent-soft: rgba(163, 191, 81, 0.18);
-  --home-accent-faint: rgba(163, 191, 81, 0.1);
+  --home-accent-soft: rgba(79, 140, 255, 0.18);
+  --home-accent-faint: rgba(79, 140, 255, 0.1);
   --glass-bg: rgba(255, 255, 255, 0.035);
   --glass-bg-strong: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -449,8 +449,8 @@ export default {
   inset: 0 0 auto;
   height: 280px;
   background:
-    radial-gradient(56% 42% at 84% 8%, rgba(163, 191, 81, 0.14) 0%, rgba(163, 191, 81, 0) 72%),
-    radial-gradient(46% 30% at 12% 10%, rgba(95, 202, 146, 0.06) 0%, rgba(95, 202, 146, 0) 74%);
+    radial-gradient(56% 42% at 84% 8%, rgba(79, 140, 255, 0.14) 0%, rgba(79, 140, 255, 0) 72%),
+    radial-gradient(46% 30% at 12% 10%, rgba(46, 106, 230, 0.06) 0%, rgba(46, 106, 230, 0) 74%);
   pointer-events: none;
   z-index: 0;
 }
@@ -501,7 +501,7 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(163, 191, 81, 0.08);
+  color: rgba(79, 140, 255, 0.08);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   pointer-events: none;
@@ -519,7 +519,7 @@ export default {
 
 .avatar-badge {
   background:
-    radial-gradient(90% 90% at 30% 20%, rgba(173, 205, 88, 0.38) 0%, rgba(173, 205, 88, 0.04) 72%),
+    radial-gradient(90% 90% at 30% 20%, rgba(79, 140, 255, 0.38) 0%, rgba(79, 140, 255, 0.04) 72%),
     linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
   color: rgba(241, 248, 219, 0.95);
   font-size: 13px;
@@ -601,7 +601,7 @@ export default {
   line-height: 1;
   letter-spacing: -0.02em;
   font-family: var(--font-brand);
-  color: rgba(163, 191, 81, 0.09);
+  color: rgba(79, 140, 255, 0.09);
   transform: rotate(-14deg);
   transform-origin: bottom right;
   background: none;
@@ -625,9 +625,9 @@ export default {
   height: 22px;
   padding: 0 10px;
   border-radius: 999px;
-  border: 1px solid rgba(163, 191, 81, 0.35);
-  background: rgba(163, 191, 81, 0.1);
-  color: rgba(201, 226, 120, 0.9);
+  border: 1px solid rgba(79, 140, 255, 0.35);
+  background: rgba(79, 140, 255, 0.1);
+  color: rgba(208, 228, 255, 0.9);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -644,7 +644,7 @@ export default {
   height: 6px;
   border-radius: 50%;
   background: var(--home-accent);
-  box-shadow: 0 0 8px rgba(163, 191, 81, 0.42);
+  box-shadow: 0 0 8px rgba(79, 140, 255, 0.42);
 }
 
 .balance-value {
@@ -664,8 +664,8 @@ export default {
   border: 1px solid rgba(233, 246, 177, 0.35);
   border-radius: 999px;
   min-height: 46px;
-  background: linear-gradient(140deg, #aec865 0%, #8fae44 58%, #7f9a3c 100%);
-  color: #1a220e;
+  background: linear-gradient(140deg, #4f8cff 0%, #3b79f0 58%, #2e6ae6 100%);
+  color: #121c2d;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -679,8 +679,8 @@ export default {
   overflow: hidden;
   z-index: 1;
   box-shadow:
-    0 12px 24px rgba(133, 160, 62, 0.24),
-    inset 0 1px 0 rgba(247, 255, 220, 0.38);
+    0 12px 24px rgba(46, 106, 230, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.38);
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
@@ -767,17 +767,17 @@ export default {
 }
 
 .cc-badge {
-  background: rgba(163, 191, 81, 0.15);
+  background: rgba(79, 140, 255, 0.15);
   padding: 4px 10px;
   border-radius: 8px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  color: #c9e278;
+  color: #d0e4ff;
   font-size: 11px;
   font-family: var(--font-label);
   font-weight: 700;
   letter-spacing: 0.05em;
-  border: 1px solid rgba(163, 191, 81, 0.3);
+  border: 1px solid rgba(79, 140, 255, 0.3);
 }
 
 .cc-percentage {
@@ -856,14 +856,14 @@ export default {
   padding: 8px 0;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(145deg, #4f8cff, #8fae44);
+  background: linear-gradient(145deg, #4f8cff, #3b79f0);
   color: #d0e4ff;
   font-size: 12px;
   font-weight: 800;
   font-family: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  box-shadow: 0 4px 10px rgba(163, 191, 81, 0.3);
+  box-shadow: 0 4px 10px rgba(79, 140, 255, 0.3);
   transition: transform 0.1s;
 }
 
@@ -872,7 +872,7 @@ export default {
 }
 
 .carousel-see-more {
-  border: 1px dashed rgba(163, 191, 81, 0.55);
+  border: 1px dashed rgba(79, 140, 255, 0.55);
   background: #111;
   padding: 0;
 }
@@ -1035,8 +1035,8 @@ export default {
 .detail-btn:active {
   transform: scale(0.98);
   box-shadow:
-    0 7px 14px rgba(133, 160, 62, 0.2),
-    inset 0 1px 0 rgba(247, 255, 220, 0.3);
+    0 7px 14px rgba(46, 106, 230, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .quick-stats {
@@ -1092,7 +1092,7 @@ export default {
 .section-link {
   border: none;
   background: transparent;
-  color: rgba(163, 191, 81, 0.82);
+  color: rgba(79, 140, 255, 0.82);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -1383,9 +1383,9 @@ export default {
 .hero-dot.active {
   width: 22px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #4f8cff, #c9e278);
-  border-color: rgba(163, 191, 81, 0.5);
-  box-shadow: 0 0 10px rgba(163, 191, 81, 0.5);
+  background: linear-gradient(90deg, #4f8cff, #d0e4ff);
+  border-color: rgba(79, 140, 255, 0.5);
+  box-shadow: 0 0 10px rgba(79, 140, 255, 0.5);
 }
 
 @media (max-width: 380px) {

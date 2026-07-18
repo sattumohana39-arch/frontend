@@ -182,8 +182,8 @@ export default {
 <style scoped>
 .deposit-page {
   --dep-accent: #4f8cff;
-  --dep-accent-soft: rgba(163, 191, 81, 0.18);
-  --dep-accent-faint: rgba(163, 191, 81, 0.1);
+  --dep-accent-soft: rgba(79, 140, 255, 0.18);
+  --dep-accent-faint: rgba(79, 140, 255, 0.1);
   --dep-glass: rgba(255, 255, 255, 0.035);
   --dep-glass-strong: rgba(255, 255, 255, 0.052);
   --dep-border: rgba(255, 255, 255, 0.11);
@@ -241,7 +241,7 @@ export default {
   height: 300px;
   pointer-events: none;
   background:
-    radial-gradient(62% 44% at 88% 6%, rgba(163, 191, 81, 0.14) 0%, rgba(163, 191, 81, 0) 72%),
+    radial-gradient(62% 44% at 88% 6%, rgba(79, 140, 255, 0.14) 0%, rgba(79, 140, 255, 0) 72%),
     radial-gradient(48% 38% at 10% 12%, rgba(115, 219, 155, 0.08) 0%, rgba(115, 219, 155, 0) 76%);
   z-index: 0;
 }
@@ -370,7 +370,7 @@ export default {
 }
 
 .calc-tag {
-  background: rgba(163, 191, 81, 0.2);
+  background: rgba(79, 140, 255, 0.2);
   color: rgba(229, 240, 194, 0.95);
   padding: 5px 12px;
   border-radius: 10px;
@@ -434,8 +434,8 @@ export default {
   padding: 10px 12px;
   line-height: 1.5;
   border-radius: 14px;
-  border: 1px solid rgba(163, 191, 81, 0.26);
-  background: rgba(163, 191, 81, 0.08);
+  border: 1px solid rgba(79, 140, 255, 0.26);
+  background: rgba(79, 140, 255, 0.08);
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -461,8 +461,8 @@ export default {
   color: #d0e4ff;
   border: 1px solid rgba(236, 246, 194, 0.34);
   box-shadow:
-    0 12px 24px rgba(133, 160, 62, 0.24),
-    inset 0 1px 0 rgba(247, 255, 220, 0.34);
+    0 12px 24px rgba(46, 106, 230, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.34);
 }
 
 @media (max-width: 360px) {
