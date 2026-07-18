@@ -157,8 +157,11 @@ function isClientOffline() {
 function getSafeRequestErrorMessage(error) {
   const errMsg = String(error?.message || '').toLowerCase();
   const retryableStatus = Number(error?.__gpRetryableStatus || 0);
+  if (errMsg.includes('invalid json response (received html)')) {
+    return 'Your network or ISP may be blocking the connection. Try switching to mobile data or Wi-Fi.';
+  }
   if (errMsg.includes('invalid json response')) {
-    return 'Invalid API response. Check API base URL configuration.';
+    return 'Network connection intercepted or invalid response. Please try using a different network or VPN.';
   }
   if (errMsg.includes('cleartext') || errMsg.includes('ssl') || errMsg.includes('certificate')) {
     return 'Secure connection failed. Please try again on a stable network.';
