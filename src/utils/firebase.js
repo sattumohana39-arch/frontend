@@ -10,13 +10,13 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA7qCKliNS1VeUewPEKjIi3_GMLC-bMqdk",
-  authDomain: "neocash.firebaseapp.com",
-  projectId: "neocash",
-  storageBucket: "neocash.firebasestorage.app",
-  messagingSenderId: "652500574048",
-  appId: "1:652500574048:web:da3d5e2b2c77b90f8af5ce",
-  measurementId: "G-DBSWFVE7GG"
+  apiKey: "AIzaSyA7qCKliNS1VeUJ98S_4Lr4djBsPf2JzEY",
+  authDomain: "navypay.firebaseapp.com",
+  projectId: "navypay",
+  storageBucket: "navypay.firebasestorage.app",
+  messagingSenderId: "1023578645785",
+  appId: "1:1023578645785:web:fe47d969786b97cf721188",
+  measurementId: "G-9HM84EMB45"
 };
 
 const app = initializeApp(firebaseConfig);

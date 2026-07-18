@@ -12,7 +12,7 @@
     <script>
       (function enforceHttps() {
         var host = window.location.hostname;
-        var isManagedHost = host === 'neocash.live' || host === 'www.neocash.live';
+        var isManagedHost = host === 'neocash.online' || host === 'www.neocash.online';
         if (isManagedHost && window.location.protocol === 'http:') {
           var next = 'https://' + host + window.location.pathname + window.location.search + window.location.hash;
           window.location.replace(next);

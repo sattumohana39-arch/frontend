@@ -145,7 +145,7 @@ export default {
     inviteBaseUrl() {
       if (typeof window === 'undefined' || !window.location) return '';
       const host = String(window.location.hostname || '').toLowerCase();
-      if (host === 'neocash.live' || host === 'www.neocash.live') {
+      if (host === 'neocash.online' || host === 'www.neocash.online') {
         return `https://${host}`;
       }
       return String(window.location.origin || '').replace(/\/$/, '');
