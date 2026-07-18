@@ -5,13 +5,13 @@ export const toast = {
   show({ title, icon = 'none', duration = 2000 }) {
     // If we're in a Vue context with a global toast component, we could use an event bus.
     // For now, we'll create a simple DOM-based toast if no component is mounted.
-    const existing = document.getElementById('navypay-toast');
+    const existing = document.getElementById('neocash-toast');
     if (existing) {
       existing.remove();
     }
 
     const toastEl = document.createElement('div');
-    toastEl.id = 'navypay-toast';
+    toastEl.id = 'neocash-toast';
     toastEl.style.cssText = `
       position: fixed;
       top: 50%;

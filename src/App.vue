@@ -35,7 +35,7 @@
     <div v-if="forceUpdateRequired" class="update-overlay">
       <div class="update-card">
         <h3>Update Required</h3>
-        <p>A new version of NavyPay is available. Please update to continue.</p>
+        <p>A new version of NeoCash is available. Please update to continue.</p>
         <p class="update-version">Current: {{ appVersion }} | Required: {{ latestVersion }}</p>
         <button class="update-btn" @click="goToUpdate">Update Now</button>
       </div>

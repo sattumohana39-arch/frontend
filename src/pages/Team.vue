@@ -145,7 +145,7 @@ export default {
     inviteBaseUrl() {
       if (typeof window === 'undefined' || !window.location) return '';
       const host = String(window.location.hostname || '').toLowerCase();
-      if (host === 'navypay.live' || host === 'www.navypay.live') {
+      if (host === 'neocash.live' || host === 'www.neocash.live') {
         return `https://${host}`;
       }
       return String(window.location.origin || '').replace(/\/$/, '');
@@ -292,7 +292,7 @@ export default {
         toast.show({ title: 'Invite link is not ready yet', icon: 'error' });
         return;
       }
-      const text = `Join NavyPay with my invite link: ${link}`;
+      const text = `Join NeoCash with my invite link: ${link}`;
       const encodedText = encodeURIComponent(text);
       const encodedLink = encodeURIComponent(link);
 

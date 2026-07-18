@@ -8,11 +8,11 @@ export const loading = {
   show(title = 'Loading...') {
     loadingCount++;
     if (loadingCount === 1) {
-      const existing = document.getElementById('navypay-loading');
+      const existing = document.getElementById('neocash-loading');
       if (existing) existing.remove();
 
       const overlay = document.createElement('div');
-      overlay.id = 'navypay-loading';
+      overlay.id = 'neocash-loading';
       overlay.style.cssText = `
         position: fixed;
         top: 0; left: 0; right: 0; bottom: 0;
@@ -106,14 +106,14 @@ export const loading = {
   hide() {
     loadingCount = Math.max(0, loadingCount - 1);
     if (loadingCount === 0) {
-      const existing = document.getElementById('navypay-loading');
+      const existing = document.getElementById('neocash-loading');
       if (existing) existing.remove();
     }
   },
 
   forceHide() {
     loadingCount = 0;
-    const existing = document.getElementById('navypay-loading');
+    const existing = document.getElementById('neocash-loading');
     if (existing) existing.remove();
   }
 };

@@ -404,7 +404,7 @@ async function executeHttpRequest(url, method, headers, body, timeout) {
   if (onNative) {
     if (typeof window !== 'undefined' && !window.__gp_native_http_logged) {
       window.__gp_native_http_logged = true;
-      console.error('NavyPay: using Capacitor native HTTP transport');
+      console.error('NeoCash: using Capacitor native HTTP transport');
     }
     let nativeData = body;
     if (

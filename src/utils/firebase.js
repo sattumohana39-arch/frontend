@@ -11,9 +11,9 @@ import {
 
 const firebaseConfig = {
   apiKey: "AIzaSyA7qCKliNS1VeUewPEKjIi3_GMLC-bMqdk",
-  authDomain: "navypay.firebaseapp.com",
-  projectId: "navypay",
-  storageBucket: "navypay.firebasestorage.app",
+  authDomain: "neocash.firebaseapp.com",
+  projectId: "neocash",
+  storageBucket: "neocash.firebasestorage.app",
   messagingSenderId: "652500574048",
   appId: "1:652500574048:web:da3d5e2b2c77b90f8af5ce",
   measurementId: "G-DBSWFVE7GG"
