@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vault - Nova Cash Stats</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-container": "#4a5e00",
+                      "primary": "#f3ffca",
+                      "surface-variant": "#262626",
+                      "error-container": "#b92902",
+                      "tertiary": "#88f6ff",
+                      "surface-container": "#1a1919",
+                      "on-secondary-fixed-variant": "#006a35",
+                      "secondary-dim": "#5bef90",
+                      "on-error-container": "#ffd2c8",
+                      "error-dim": "#d53d18",
+                      "primary-fixed-dim": "#beee00",
+                      "on-secondary-container": "#e3ffe4",
+                      "tertiary-container": "#17eefa",
+                      "surface-container-high": "#201f1f",
+                      "secondary": "#6bfe9c",
+                      "surface-container-low": "#131313",
+                      "error": "#ff7351",
+                      "secondary-fixed-dim": "#5bef90",
+                      "on-secondary-fixed": "#004a23",
+                      "surface-container-highest": "#262626",
+                      "on-tertiary-container": "#005458",
+                      "outline": "#767575",
+                      "on-primary-fixed": "#3a4a00",
+                      "primary-container": "#cafd00",
+                      "surface-bright": "#2c2c2c",
+                      "on-surface": "#ffffff",
+                      "on-background": "#ffffff",
+                      "surface-dim": "#0e0e0e",
+                      "inverse-primary": "#516700",
+                      "primary-dim": "#beee00",
+                      "on-tertiary-fixed-variant": "#005e63",
+                      "secondary-fixed": "#6bfe9c",
+                      "on-surface-variant": "#adaaaa",
+                      "on-primary-fixed-variant": "#526900",
+                      "background": "#0e0e0e",
+                      "on-error": "#450900",
+                      "primary-fixed": "#cafd00",
+                      "on-primary": "#516700",
+                      "inverse-on-surface": "#565555",
+                      "tertiary-dim": "#00deea",
+                      "on-tertiary": "#005d62",
+                      "tertiary-fixed-dim": "#00deea",
+                      "inverse-surface": "#fcf9f8",
+                      "surface": "#0e0e0e",
+                      "secondary-container": "#006d37",
+                      "outline-variant": "#484847",
+                      "tertiary-fixed": "#17eefa",
+                      "surface-tint": "#f3ffca",
+                      "surface-container-lowest": "#000000",
+                      "on-secondary": "#005f2f",
+                      "on-tertiary-fixed": "#003f43"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background: rgba(44, 44, 44, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pulse-dot {
+            box-shadow: 0 0 8px rgba(91, 239, 144, 0.6);
+        }
+      </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body pb-32">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full overflow-hidden border border-outline-variant/30">
+<img alt="User" class="h-full w-full object-cover" data-alt="Professional portrait of a young male executive in a sharp suit with soft cinematic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU3CIbBjMtoRhp-SgDBmAXkvbHfzn2j2HZDUP0uAvj7Bbpfdify_J20YcZ82OMt9S1FaysM1AlaWSHlXsbRJG8rWcEvkh0bYpylik-I8lfiptht1M1IUC3ZfnVeB1np1caMggQ5SyQwNpMpIVtnAhUO-gFL6tV63hqM6gTszA2-DTe89xk7fsBO--rxmtYm41omPOxNBH7nHxQzz2PwNKtN5W8-nmC9lkRoqu3woc7yK3en_QJRd3ABTURt8Ao-m29W0iHNyk3x7mS"/>
+</div>
+<span class="text-[#f3ffca] font-manrope font-black tracking-tighter text-2xl">Vault</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:bg-[#2c2c2c] transition-colors duration-300 p-2 rounded-full active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[#f3ffca]" data-icon="notifications">notifications</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 px-6 max-w-7xl mx-auto space-y-8">
+<!-- Hero Section: Account Overview -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 space-y-2">
+<label class="font-label text-on-surface-variant uppercase tracking-widest text-[10px]">Total Nova Balance</label>
+<div class="flex items-baseline gap-3">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter text-on-surface">$142,850.<span class="text-primary-container">64</span></h1>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-label flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+                        +12.4%
+                    </span>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col justify-end items-end gap-3">
+<button class="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed font-headline font-bold rounded-full hover:shadow-[0_0_20px_rgba(202,253,0,0.4)] transition-all active:scale-95">
+                    Deposit Funds
+                </button>
+</div>
+</section>
+<!-- Bento Grid Statistics -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Sell Stats Card -->
+<div class="md:col-span-2 glass-panel p-6 rounded-3xl space-y-6 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div class="h-12 w-12 rounded-2xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="sell">sell</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary-dim pulse-dot animate-pulse"></div>
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Live Volume</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-on-surface">$42,900.00</h3>
+<p class="text-on-surface-variant text-sm">Total Assets Sold (MTD)</p>
+</div>
+</div>
+<!-- Commission Card -->
+<div class="glass-panel p-6 rounded-3xl space-y-6 border border-primary/10">
+<div class="h-12 w-12 rounded-2xl bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="percent">percent</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary">$1,240.12</h3>
+<p class="text-on-surface-variant text-sm">Net Commission</p>
+</div>
+</div>
+<!-- Transaction Velocity -->
+<div class="glass-panel p-6 rounded-3xl space-y-6">
+<div class="h-12 w-12 rounded-2xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="speed">speed</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-on-surface">0.4s</h3>
+<p class="text-on-surface-variant text-sm">Avg. Settlement</p>
+</div>
+</div>
+</section>
+<!-- Payment & Exchange Section -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Real Time Exchange Rates -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex justify-between items-center">
+<h2 class="font-headline font-bold text-xl">Real Time Exchange</h2>
+<span class="font-label text-[10px] text-on-surface-variant">INR / USDT</span>
+</div>
+<div class="bg-surface-container-low rounded-[2rem] overflow-hidden p-1">
+<div class="grid grid-cols-1 gap-px bg-outline-variant/10">
+<!-- Rate Row -->
+<div class="bg-surface-container-low p-6 flex justify-between items-center group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-xl font-bold">₹</div>
+<div>
+<p class="font-headline font-bold text-on-surface">INR Market Rate</p>
+<p class="font-label text-xs text-on-surface-variant uppercase">Global Spot Price</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-xl">83.42 <span class="text-xs text-on-surface-variant font-normal">INR</span></p>
+<p class="text-secondary text-xs">+0.04 (0.05%)</p>
+</div>
+</div>
+<!-- Rate Row -->
+<div class="bg-surface-container-low p-6 flex justify-between items-center group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container" data-icon="currency_exchange" style="font-variation-settings: 'FILL' 1;">currency_exchange</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">USDT / INR</p>
+<p class="font-label text-xs text-on-surface-variant uppercase">Vault Protocol Exchange</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-xl">88.14 <span class="text-xs text-on-surface-variant font-normal">INR</span></p>
+<p class="text-primary text-xs">Premium Rate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Methods / Quick Actions -->
+<div class="space-y-4">
+<h2 class="font-headline font-bold text-xl">Recent Activity</h2>
+<div class="space-y-3">
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-high">
+<div class="w-12 h-12 rounded-xl bg-surface-bright flex items-center justify-center">
+<span class="material-symbols-outlined text-error" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="flex-1">
+<p class="font-headline font-bold text-sm">Sell USDT</p>
+<p class="font-label text-[10px] text-on-surface-variant uppercase">14:22 • #VLT-992</p>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-sm text-error">-$2,400.00</p>
+<p class="text-[10px] text-on-surface-variant">Confirmed</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-high">
+<div class="w-12 h-12 rounded-xl bg-surface-bright flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="south_west">south_west</span>
+</div>
+<div class="flex-1">
+<p class="font-headline font-bold text-sm">Deposit INR</p>
+<p class="font-label text-[10px] text-on-surface-variant uppercase">09:15 • #VLT-841</p>
+</div>
+<div class="text-right">
+<p class="font-headline font-bold text-sm text-secondary">+$1,500.00</p>
+<p class="text-[10px] text-on-surface-variant">Settled</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visualization Placeholder -->
+<section class="h-64 rounded-[3rem] bg-gradient-to-br from-surface-container-highest to-surface-dim relative overflow-hidden flex items-center justify-center border border-outline-variant/10">
+<div class="absolute inset-0 opacity-20">
+<img alt="Abstract Grid" class="w-full h-full object-cover" data-alt="Futuristic digital data network visualization with glowing green neon lines on a deep black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ZZswFRoGbbFmmsEnC_aO_XRBuvw1gi3ii49TMOYADnth8AfjVtfdX6es9yX5b4znyyGQCMJyVHXYtoFrH0gDtr2ZHkJaUTnRdrHlomldVlshWn6NTvJbc1tx5DlVT6DKD7Mut4SYZfti6R7anB5_POsr9-b4pzyXIbZ02og8qapPLRz6k8zMG5XKhV8H2uwBx8uXs3ECb9aGZt4GucpuPs6ogrTM2eArsnVQjOKyiycYyS_qwim9FtXuvz6I06wVHo3Z1uDSSQtF"/>
+</div>
+<div class="relative z-10 text-center space-y-2">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="query_stats">query_stats</span>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Asset Performance visualization</p>
+<div class="flex items-baseline justify-center gap-1">
+<div class="w-1 h-8 bg-primary/20 rounded-full"></div>
+<div class="w-1 h-12 bg-primary/40 rounded-full"></div>
+<div class="w-1 h-16 bg-primary/60 rounded-full"></div>
+<div class="w-1 h-24 bg-primary rounded-full"></div>
+<div class="w-1 h-12 bg-primary/40 rounded-full"></div>
+<div class="w-1 h-14 bg-primary/60 rounded-full"></div>
+<div class="w-1 h-10 bg-primary/30 rounded-full"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-6 pt-2 bg-[#1a1a1a]/80 backdrop-blur-xl z-50 rounded-t-[2rem] shadow-[0_-20px_40px_rgba(0,0,0,0.4)]">
+<a class="flex flex-col items-center justify-center text-gray-400 p-2 hover:text-[#f3ffca] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-space-grotesk text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 p-2 hover:text-[#f3ffca] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-space-grotesk text-[10px] uppercase tracking-widest mt-1">Payment</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 p-2 hover:text-[#f3ffca] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-space-grotesk text-[10px] uppercase tracking-widest mt-1">Wallet</span>
+</a>
+<!-- Active Stats Tab -->
+<a class="flex flex-col items-center justify-center bg-[#cafd00] text-black rounded-full p-2 h-12 w-12 mt-[-10px] shadow-[0_0_15px_rgba(202,253,0,0.3)] scale-110 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+<span class="hidden">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-400 p-2 hover:text-[#f3ffca] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-space-grotesk text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

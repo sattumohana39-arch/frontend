@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gold Pay</string>
+    <string name="title_activity_main">Gold Pay</string>
+    <string name="package_name">com.goldpay.gamma</string>
+    <string name="custom_url_scheme">com.goldpay.gamma</string>
+</resources>

@@ -1,0 +1,4 @@
+Keystore: android/app/gamma-release.jks
+Key Alias: gammarelease
+Store Password: loxadR0FkADXIdv8dbuf
+Key Password: loxadR0FkADXIdv8dbuf
