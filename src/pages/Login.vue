@@ -1,7 +1,7 @@
 <template>
   <div class="page-no-tab login-page">
     <div class="login-header">
-      <img src="/logo/logo-icon.png" class="login-logo" alt="NavyPay logo" />
+      <img src="/logo/logo-icon.jpg" class="login-logo" alt="NavyPay logo" />
       <h1 class="login-brand">NAVYPAY</h1>
       <p class="login-subtitle">Secure access to your account</p>
     </div>
